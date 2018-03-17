@@ -123,7 +123,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.title(function (p) {
 			return "State: " + p["key"]
 					+ "\n"
-					+ "Total Donations: " + Math.round(p["value"]) + " $";
+					+ "Total Deaths: " + Math.round(p["value"]);
 		})
 
     dc.renderAll();
