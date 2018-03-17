@@ -70,7 +70,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.formatNumber(d3.format(".3s"));
 
 	timeChart
-		.width(600)
+		.width(900)
 		.height(160)
 		.margins({top: 10, right: 50, bottom: 30, left: 50})
 		.dimension(dateDim)
