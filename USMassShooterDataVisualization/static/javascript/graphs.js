@@ -82,7 +82,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.yAxis().ticks(4);
 
 	raceTypeChart
-        .width(700)
+        .width(900)
         .height(250)
         .dimension(raceTypeDim)
         .group(numShootingsByRace)
@@ -90,7 +90,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 //        .yAxis().ticks(14)
 
 	motiveTypeChart
-		.width(700)
+		.width(900)
 		.height(250)
 //		.x(d3.scale.ordinal())
 //		.xUnits(dc.units.ordinal)
@@ -98,6 +98,7 @@ function makeGraphs(error, projectsJson, statesJson) {
         .group(numShootingsByMotive)
         .xAxis().ticks(4);
 //        .yAxis().ticks(14)
+            
 
     fateChart
         .width(700)
