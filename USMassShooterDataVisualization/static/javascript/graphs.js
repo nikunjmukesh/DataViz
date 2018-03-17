@@ -110,6 +110,7 @@ function makeGraphs(error, projectsJson, statesJson) {
         .height(250)
         .radius(125)
         .innerRadius(50)
+       // .colors(["#490109","#ce041a", "#d64252", "#633419", "#bc7f5c", "#d6cbc5",])
         .dimension(fatesDim)
         .group(deathByFate)
 
