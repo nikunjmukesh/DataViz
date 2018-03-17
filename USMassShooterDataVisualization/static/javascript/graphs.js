@@ -79,14 +79,14 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.x(d3.time.scale().domain([minDate, maxDate]))
 		.elasticY(true)
 		.xAxisLabel("Year")
-        .yAxisLabel("Deaths")
+        .yAxisLabel("Shootings")
 		.yAxis().ticks(4);
         
 
 
 	raceTypeChart
         .width(900)
-        .height(350)
+        .height(370)
         .dimension(raceTypeDim)
         .group(numShootingsByRace)
         .xAxis().ticks(4);
