@@ -79,11 +79,14 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.x(d3.time.scale().domain([minDate, maxDate]))
 		.elasticY(true)
 		.xAxisLabel("Year")
+        .yAxisLabel("Deaths")
 		.yAxis().ticks(4);
+        
+
 
 	raceTypeChart
         .width(900)
-        .height(250)
+        .height(350)
         .dimension(raceTypeDim)
         .group(numShootingsByRace)
         .xAxis().ticks(4);
@@ -91,11 +94,13 @@ function makeGraphs(error, projectsJson, statesJson) {
 
 	motiveTypeChart
 		.width(900)
-		.height(250)
+		.height(350)
 //		.x(d3.scale.ordinal())
 //		.xUnits(dc.units.ordinal)
         .dimension(motiveDim)
         .group(numShootingsByMotive)
+        //.yAxisLabel("Shooting Incidents")
+        //.yAxisLabel("Motive")
         .xAxis().ticks(4);
 //        .yAxis().ticks(14)
             
@@ -112,7 +117,7 @@ function makeGraphs(error, projectsJson, statesJson) {
 		.height(330)
 		.dimension(stateDim)
 		.group(totalDeathByState)
-		.colors(["#E2F2FF", "#C4E4FF", "#9ED2FF", "#81C5FF", "#6BBAFF", "#51AEFF", "#36A2FF", "#1E96FF", "#0089FF", "#0061B5"])
+		.colors(["#ede6e6", "#ffdddd", "#ffdddd", "#fcbdbd", "#ffa0a0", "#ed7676", "#d85252", "#ce3131", "#c60b0b", "#a30101"])
 		.colorDomain([0, max_state])
 		.overlayGeoJson(statesJson["features"], "state", function (d) {
 			return d.properties.name;
@@ -127,5 +132,16 @@ function makeGraphs(error, projectsJson, statesJson) {
 		})
 
     dc.renderAll();
-
+ function AddXAxis(chartToUpdate, displayText) {
+            chartToUpdate.svg()
+                .append("text")
+                .attr("class", "x-axis-label")
+                .attr("text-anchor", "middle")
+                .attr("x", chartToUpdate.width() / 2)
+                .attr("y", chartToUpdate.height())
+                .text(displayText);
+        }
+        AddXAxis(motiveTypeChart, "Number of Shooting Incidents");
+        AddXAxis(raceTypeChart, "Number of Shooting Incidents");
 };
+
