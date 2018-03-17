@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./static/libraries/csslib/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/libraries/csslib/keen-dashboards.css">
+  <link rel="stylesheet" href="./static/libraries/csslib/dc.css">
+  <link rel="stylesheet" href="./static/customcss/custom.css">
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #505050;">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Mass Shootings in the United States</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="row">
+
+          <!-- Time Chart -->
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Timeline
+              </div>
+              <div class="chart-stage">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart -->
+
+          <!-- Fate Pie -->
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Fate of Shooter
+              </div>
+              <div class="chart-stage">
+                <!--<div id="poverty-level-row-chart-2"></div>-->
+                <div id="fate-row-chart-2"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Fate Pie -->
+
+
+          <!-- Poverty Pie -->
+          <!--<div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Poverty Level
+              </div>
+              <div class="chart-stage">
+                <div id="poverty-level-row-chart"></div>
+              </div>
+            </div>
+          </div>-->
+          <!-- Poverty Pie -->
+
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-sm-6">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Map Visualization
+          </div>
+          <div class="chart-stage">
+            <div id="us-chart"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Map -->
+
+
+
+      <!--&lt;!&ndash; Metric 1 &ndash;&gt;-->
+      <!--<div class="col-sm-3">-->
+        <!--<div class="chart-wrapper">-->
+          <!--<div class="chart-title">-->
+            <!--Total Number of Donations-->
+          <!--</div>-->
+          <!--<div class="chart-stage">-->
+            <!--<div id="number-projects-nd"></div>-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!--&lt;!&ndash; Metric 1 &ndash;&gt;-->
+
+      <!-- Metric 1 -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Number of Shooting Incidents
+          </div>
+          <div class="chart-stage">
+            <div id="number-shooting-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Metric 1 -->
+
+
+      <!-- Metric 2 -->
+      <div class="col-sm-3">
+        <div class="chart-wrapper">
+          <div class="chart-title">
+            Number of Deaths
+          </div>
+          <div class="chart-stage">
+            <div id="total-deaths-nd"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Metric 2 -->
+
+
+          <!-- Motive Pie -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Motive
+              </div>
+              <div class="chart-stage">
+                <!--<div id="poverty-level-row-chart-2"></div>-->
+                <div id="motive-row-chart-2"></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
+          <!-- Motive Pie -->
+
+          <!-- Race Pie -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Race
+              </div>
+              <div class="chart-stage">
+                <!--<div id="resource-type-row-chart"></div>-->
+                <div id="race-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Race Pie -->
+
+
+
+    </div>
+
+  </div>
+
+    <hr>
+    <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
+
+  </div>
+
+  <script src="./static/libraries/jslib/jquery.min.js"></script>
+  <script src="./static/libraries/jslib/bootstrap.min.js"></script>
+  <script src="./static/libraries/jslib/crossfilter.js"></script>
+  <script src="./static/libraries/jslib/d3.js"></script>
+  <script src="./static/libraries/jslib/dc.js"></script>
+  <script src="./static/libraries/jslib/queue.js"></script>
+
+
+  <script src="./static/libraries/jslib/keen.min.js"></script>
+  <script src='./static/javascript/graphs.js' type='text/javascript'></script>
+</body>
+</html>
