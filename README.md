@@ -1,1 +1,1 @@
-Data Visualization of US Mass Shoorting incidents
+Data Visualization of US Mass Shooting incidents
