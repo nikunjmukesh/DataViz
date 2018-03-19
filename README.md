@@ -9,7 +9,7 @@ Requirements
  - MongoDB
  - "Mass Shootings in America" Standford Database
 
-Steps to run visualizations project
+Steps to run visualization project
 ===================================
 
 
@@ -31,4 +31,9 @@ Steps to run visualizations project
 *4. Open Localhost with port number 5000 in the browser*
 
 		
+
+*Contributors*
+Nikunj Patel :  https://www.github.com/nikunjmukesh
+Chirag Balakrishna: https://www.github.com/chirag-b
+
 
