@@ -7,7 +7,7 @@ Requirements
  - PyMongo
  - Flask
  - MongoDB
- - "Mass Shootings in America" Standford Database
+ - "Mass Shootings in America" Stanford Database
 
 Steps to run visualization project
 ===================================
