@@ -1,6 +1,6 @@
 Data Visualization of US Mass Shooting incidents
 ================================================
-
+![Alt text]( https://raw.githubusercontent.com/nikunjmukesh/DataViz/master/USMassShooterDataVisualization/sampleDashboard.png?raw=true "Dashboard")
 Requirements
 ============
  - Python 2.7+
