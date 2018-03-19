@@ -34,7 +34,7 @@ Steps to run visualization project
 
 Contributors
 ==============
--Nikunj Patel :  https://www.github.com/nikunjmukesh
--Chirag Balakrishna: https://www.github.com/chirag-b
+- Nikunj Patel :  https://www.github.com/nikunjmukesh
+- Chirag Balakrishna: https://www.github.com/chirag-b
 
 
